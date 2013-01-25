@@ -1,0 +1,26 @@
+<script type="text/javascript" src="lib/jquery.min.js"></script>
+<script type="text/javascript" src="lib/underscore-min.js"></script>
+<script type="text/javascript" src="js/logic.js"></script>
+
+<link rel="stylesheet" href="css/style.css" />
+
+<div>
+    <h1>Regular html</h1>
+    Template data below
+    <div id="test1-target"></div>
+    <script type="text/template" id="test1-template">
+        <% $.each(items, function(i, s) { %>
+            <div id="test1-item-<%- s.id %>" class="item <%- s.class %>">
+                <div class="name">
+                    <%- s.name %>
+                </div>
+                <div class="description">
+                    <%- s.description %>
+                </div>
+            </div>
+        <% }); %>
+    </script>
+
+</div>
+
+
